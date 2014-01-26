@@ -4,7 +4,6 @@ html {
 
 body {
 	font-family: Verdana, Arial, sans-serif;
-	color: #888888;
 	text-align: center;
 	height: 100%;
 	background-color:black;
@@ -32,15 +31,12 @@ a:active, a:hover {
 }
 
 #content {
-	float:left;
 	margin-top:20px;
-	vertical-align: top;
 }
 
 #ad {
 	float:left;
 	margin: 20px;
-	vertical-align: top;
 }
 
 div.broken,
@@ -64,10 +60,10 @@ div.broken {
 	display: none;
 }
 div#unityPlayer {
+	float:left;
 	cursor: default;
-	position:fixed;
-    height: 80%;
-	width: 69%;
+    height: 90vh;
+	width: 70vw;
 }
 
 #version{
