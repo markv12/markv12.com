@@ -1,0 +1,37 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	color: #888888;
+	text-align: center;
+	height: 100%;
+	background-color:black;
+}
+
+a:link, a:visited {
+	color: #bfbfbf;
+}
+a:active, a:hover {
+	color: #bfbfbf;
+}
+
+#imageframe {
+	background-color:white;
+	display: inline;
+}
+
+#image{
+	float:left;
+	border-radius:5px;
+}
+
+#ad {
+	float:left;
+	margin: 30px;
+}
+
+#tester {
+    display:none;
+}
