@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+	<head>
+		<title>Testing Out Angular.js</title>
+	</head>
+	<body data-ng-init="customers=[{name:'Derp Herp', city:'LA'}, {name:'Herp McGerp', city:'San Francisco'}, {name:'Scott Steffes', city:'Hirakata'}]">
+
+		Name:
+		<br />
+		
+		<input type="text" ng-model="name"/> {{ name }}
+		
+		<ul>
+			<li data-ng-repeat="cust in customers | filter:name | orderBy:'city'">{{cust.name}} - {{cust.city}}</li>
+		</ul>
+		
+		<script src="angular.min.js"></script>
+	</body>
+</html>
