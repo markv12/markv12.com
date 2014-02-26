@@ -3,15 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Testing Out Angular.js</title>
-		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
-		<div ng-app="">
-			<div ng-controller="testController">
-				<h1>{{data.message + " world"}}</h1>
+		<div ng-app="myApp">
+			<div ng-controller="controllerOne">
+				<input type="text" ng-model="data.message"/>
+				<h1>{{data.message}}</h1>
+				
+			</div>
+			
+			<div ng-controller="controllerTwo">
+				<input type="text" ng-model="data.message"/>
+				<h1>{{data.message}}</h1>
 			
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
