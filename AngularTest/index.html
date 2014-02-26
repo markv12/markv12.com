@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html data-ng-app="demoApp">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Testing Out Angular.js</title>
+		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
-		<div>
-			<div data-ng-view=""></div>
+		<div ng-app="">
+			<div ng-controller="testController">
+				<h1>{{data.message + " world"}}</h1>
+			
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
-		<script src="testcontroller.js"></script>
 	</body>
 </html>
