@@ -1,19 +1,14 @@
-var app = angular.module("twitterApp", []);
+var app = angular.module("drinkApp", []);
 
 app.controller("AppCtrl", function($scope) {
-    $scope.loadMoreTweets = function() {
-        alert("Loading tweets!");
-    }
-
-    $scope.deleteTweets = function() {
-        alert("deleting tweets");
-    }
+    $scope.ctrlFlavor = "blackberry"
 })
 
-app.directive("enter", function() {
-    return function(scope, element, attrs) {
-        element.bind("mouseenter", function() {
-            scope.$apply(attrs.enter)
-        })
+app.directive("drink", function() {
+    return {
+        scope: {
+            flavor: "@"
+        },
+        template: '<div>{{flavor}}</div>'
     }
 })
