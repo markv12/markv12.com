@@ -4,15 +4,20 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>markv12</title>
 		
+		<link rel="stylesheet" href="foundation/css/foundation.min.css">
 		<style>
 			@font-face { font-family: grumps; src: url('subscribe/BD_Cartoon_Shout.ttf');} 
 
 			body {
-				color:#ffffff;
-				font-family:grumps;
+				background-color:#000000 !important;
+				font-family:verdana;
+				color:#FDFDFF;
+			}
+			
+			.button{
+				font-family:verdana;
 			}
 		</style>
-		
 	</head>
 	<body bgcolor="black" style="text-align:center;">
 
@@ -23,9 +28,9 @@
 		</br>
 		
 		<p>
-		SubscrIbe to our emaIl lIst for productIon updates!
+		Subscribe to our email list for production updates!
 		</p>
-		</br>
+		<br />
 		
 		<form method="post" action="http://scripts.dreamhost.com/add_list.cgi"> 
 			<input type="hidden" name="list" value="updates" /> 
@@ -39,9 +44,11 @@
 			<input type="hidden" name="emailit" value="1" /> 
 			Name: <input id="label" name="name" /> 
 			E-mail: <input id="label" name="email" /><br /> 
-			<input type="submit" name="submit" value="Subscribe!" /> 
-			<input type="submit" name="unsub" value="Unsubscribe" />
+		    <br />
+			<input class="button small radius" type="submit" name="submit" value="Subscribe!" /> 
+			<input class="button small radius" type="submit" name="unsub" value="Unsubscribe" />
 
 		</form>
+		
 	</body>
 </html>
