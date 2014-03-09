@@ -5,7 +5,6 @@ html {
 body {
 	font-family: Verdana, Arial, sans-serif;
 	color:#888888;
-	text-align: center;
 	height: 100%;
 	background-color:black;
 }
@@ -21,9 +20,6 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ 
 }
 
-#mainRow{
-}
-
 a:link, a:visited {
 	color: #bfbfbf;
 }
@@ -31,13 +27,14 @@ a:active, a:hover {
 	color: #bfbfbf;
 }
 
+.row.full-width { width: 100%; max-width: 100%; }
+
 #content {
 	margin-top:20px;
 }
 
 #ad {
-	float:left;
-	margin: 20px;
+	margin-top: 20px;
 }
 
 div.broken,
@@ -61,10 +58,9 @@ div.broken {
 	display: none;
 }
 div#unityPlayer {
-	float:left;
 	cursor: default;
     height: 90vh;
-	width: 70vw;
+	width: 100%;
 }
 
 #version{
@@ -76,7 +72,15 @@ div#unityPlayer {
 #controls{
 	text-align:left;
 	margin-left:170px;
-	clear:both;
+}
+
+.breadcrumbs{
+	color:#888888;
+	background-color:#222222;
+	border-color:#555555;
+}
+li{
+	color:#CCCCCC !important;
 }
 
 #tester {

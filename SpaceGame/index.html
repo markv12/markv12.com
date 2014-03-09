@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
-		<link type="text/css" rel="stylesheet" href="normalize.css"/>
+		<link rel="stylesheet" href="../foundation/css/foundation.min.css">
+		<link type="text/css" rel="stylesheet" href="../foundation/css/normalize.css"/>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>SpaceThing</title>
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
@@ -14,52 +15,9 @@
 			document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
 			-->
 		</script>
-		<script type="text/javascript">
-		<!--
-			var config = {
-				params: { enableDebugging:"0" }
-				
-			};
-			var u = new UnityObject2(config);
-			
-			jQuery(function() {
-
-				var $missingScreen = jQuery("#unityPlayer").find(".missing");
-				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-				$missingScreen.hide();
-				$brokenScreen.hide();
-
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
-						case "broken":
-							$brokenScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$brokenScreen.show();
-						break;
-						case "missing":
-							$missingScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$missingScreen.show();
-						break;
-						case "installed":
-							$missingScreen.remove();
-						break;
-						case "first":
-						break;
-					}
-				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "SpaceThing.unity3d");
-			});
-		-->
-		</script>
+		
+		<script type="text/javascript" src='unityPlayer.js'></script>
+		
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -74,8 +32,8 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div id="mainRow">
-				<div id="ad">
+			<div class="row full-width">
+				<div id="ad" class="large-2 medium-2 columns hide-for-small-only">
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- SideBarAd -->
 					<ins class="adsbygoogle"
@@ -88,7 +46,7 @@
 					</script>
 				
 				</div>
-				<div id="content">
+				<div id="content" class="large-10 medium-10 columns">
 					<div id="unityPlayer">
 						<div class="missing">
 							<a href="http://unity3d.com/webplayer/" title="Space Thing">
@@ -98,27 +56,33 @@
 					</div>
 				</div>
 			</div>
-			<br/>
-			<p id='controls'>
-				Left/Right: Turn 
-				<br/>Space: Rear Thruster
-				<br/>X: Flip
-				<br/>Esc: Pause Menu
-			</p>
-			<div class='message'></div>
-			<p id='version'>v0.1.7</p>
-			
-			<script type="text/javascript">
-				if (document.getElementById("tester") == undefined)
-				{
-					$('div.message').html('<p class="no">You have <strong>AdBlock</strong> enabled! So do I! woot!</p>');
-				}
-				else
-				{
-					$('div.message').css('display', 'none');
-				}
-			</script>
-			
+			<div class="row full-width">
+				<p class='large-2 medium-2 columns'></p>
+				<p class='large-10 medium-10 columns' id='controls'>
+					Left/Right: Turn 
+					<br/>Space: Rear Thruster
+					<br/>X: Flip
+					<br/>Esc: Pause Menu
+				</p>
+			</div>
+			<div class="row full-width">
+				<div class='message'></div>
+				<p id='version'>v0.1.7</p>
+				<ul class="breadcrumbs"> 
+					<li><a href="../index.html">Home</a></li> 
+					<li><a href="./index.html">Space Thing</a></li> </ul>
+				
+				<script type="text/javascript">
+					if (document.getElementById("tester") == undefined)
+					{
+						$('div.message').html('<p class="no">You have <strong>AdBlock</strong> enabled! So do I! woot!</p>');
+					}
+					else
+					{
+						$('div.message').css('display', 'none');
+					}
+				</script>
+			</div>
 		</div>
 	</body>
 </html>
