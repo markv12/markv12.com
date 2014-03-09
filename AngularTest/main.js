@@ -1,14 +1,13 @@
-var app = angular.module("drinkApp", []);
+var app = angular.module("phoneApp", []);
 
 app.controller("AppCtrl", function($scope) {
-    $scope.ctrlFlavor = "blackberry"
-})
 
-app.directive("drink", function() {
+});
+
+app.directive("panel", function() {
     return {
-        scope: {
-            flavor: "="
-        },
-        template: '<div>{{flavor}}</div>'
+        restrict: "E",
+        transclude: true,
+        template: '<div class="panel" >This is a panel component<div ng-transclude></div></div>'
     }
 })
