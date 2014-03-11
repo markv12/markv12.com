@@ -28,9 +28,41 @@
 		</style>
 	</head>
 	<body bgcolor="black" style="text-align:center;">
+		
+		<div class="contain-to-grid">
+			<nav class="top-bar" data-topbar> 
+				<ul class="title-area"> 
+					<li class="name"> 
+						<h1>MarkV12</h1> 
+					</li> 
+				</ul> 
+				<section class="top-bar-section"> <!-- Right Nav Section -->
+					<ul class="right"> 
+						<li class="has-dropdown"> 
+							<a href="#">Projects</a> 
+							<ul class="dropdown"> 
+								<li>
+									<a href="./spacegame/index.html">Space Thing</a>
+									<a href="./grumproom/index.html">GameGrump's Room</a>
+								</li>
+							</ul> 
+						</li>
+						<li class="has-dropdown"> 
+							<a href="./about/index.html">About</a> 
+							<ul class="dropdown"> 
+								<li>
+									<a href="./about/index.html">About Me</a>
+									<a href="./resume/index.html">Résumé</a>
+								</li>
+							</ul> 
+						</li>
+					</ul> <!-- Left Nav Section --> 
+				</section> 
+			</nav>
+		</div>
 		<div class="row">
 			<div class="large-6 columns large-centered">
-				<a href="http://markv12.com/Game">
+				<a href="./spacegame/index.html">
 					<img id="image" src="spaceGameLogo.png" alt="space game"></img>
 				</a>
 			</div>
@@ -62,5 +94,11 @@
 				</form>
 			</div>
 		</div>
+		
+		<script src="foundation/js/vendor/jquery.js"></script>
+    	<script src="foundation/js/foundation.min.js"></script>
+    	<script>
+      		$(document).foundation();
+   		</script>
 	</body>
 </html>
