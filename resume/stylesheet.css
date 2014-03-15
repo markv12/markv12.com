@@ -1,10 +1,12 @@
 body {
-	font-family: Verdana, Arial, sans-serif;
-	color:#111111;
-	background-color:black;
+	background-color:#222222;
 }
 
-.panel {
-	padding: 6px;
-
+body *{
+	//color:#222222 !important;
+	font-family:Helvetica, Arial, sans-serif !important;
 }
+
+h1{text-decoration:underline}
+
+.indented { margin-left: 20px; }
