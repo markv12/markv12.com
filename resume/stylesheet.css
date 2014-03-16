@@ -22,3 +22,7 @@ h1 {
 .setHeight {
 	height: 95px;
 }
+
+.panel{
+	border-radius:5px;
+}
