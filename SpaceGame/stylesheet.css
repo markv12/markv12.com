@@ -79,6 +79,10 @@ div#unityPlayer {
 	background-color:#222222;
 	border-color:#555555;
 }
+.message{
+	text-align:center;
+}
+
 li{
 	color:#CCCCCC !important;
 }
