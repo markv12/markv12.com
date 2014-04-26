@@ -1,0 +1,34 @@
+@font-face {
+	font-family: grumps;
+	src: url('subscribe/BD_Cartoon_Shout.ttf');
+}
+
+body {
+	background-color: #000000 !important;
+	font-family: verdana;
+	color: #FDFDFF;
+}
+
+
+
+.button {
+	font-family: verdana;
+}
+.panel {
+	background-color: #222222;
+	color: #CCCCCC;
+	border-color: #555555;
+	border-radius: 12px;
+}
+
+.link-panel:hover {
+	background-color: #002932;
+}
+
+p, h1 {
+	color: #CCCCCC;
+}
+
+#mainBlock {
+	margin-top: 4vh;
+}
