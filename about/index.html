@@ -2,36 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link type="text/css" rel="stylesheet" href="../foundation/css/foundation.min.css">
-		<link type="text/css" rel="stylesheet" href="../foundation/css/normalize.css"/>
-		<link type="text/css" rel="stylesheet" href="../resume/stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="../libraries/foundation/css/normalize.css"/>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	</head>
 	<body>
-		<div class="row">
-			<div class="large-9 medium-9 columns large-centered medium-centered" style="margin-top:12vh">
-				<div class="panel">
-					<div class="row">
-						<div class="large-5 medium-5 columns">
-							<img src="profileSmall.jpg" alt="picture of me Scott Steffes" style="border-radius: 5px"/>
-						</div>
-						<div class="large-7 medium-7 columns">
-							<p>
-								Scott Steffes is a Software Developer currently living in Hirakata Japan. 
-							</p>
-						</div>
-					</div>
-				</div>
+		<script src="../libraries/masonry/dist/masonry.pkgd.min.js"></script>
+		<script src="../libraries/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<div id="container" class="js-masonry"
+		data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'>
+			<div class="item">
+				<img src="profileSmall.jpg" alt="picture of me Scott Steffes" style="border-radius: 5px"/>
+				<p>
+					Scott Steffes is a Software Developer currently living in Hirakata Japan.
+				</p>
+
 			</div>
-		</div>
-		<div class="row">
-			<ul class="breadcrumbs" style="position: fixed; bottom: 0;">
-				<li>
-					<a href="../index.html">Home</a>
-				</li>
-				<li>
-					<a href="./index.html">About</a>
-				</li>
-			</ul>
+
+			<div class="item">
+				My Penis Goes here
+			</div>
+			<div class="item w2">
+				And Here
+			</div>
+			<div class="item">
+				And also maybe even here
+			</div>
 		</div>
 	</body>
 </html>
