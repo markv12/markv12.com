@@ -21,7 +21,14 @@ body {
 	margin-bottom: -1.875em; /* 30px */
 }
 .item {
-	width: 30.303%; /* 300px */
+	width: 200px; /* 300px */
 	float: left;
 	background-color:#B2B2B2;
+	border-radius:5px;
+	margin-bottom:5px;
+}
+
+.masonImg{
+	border-radius: 5px;
+	width:100%;	
 }
