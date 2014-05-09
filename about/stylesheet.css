@@ -11,6 +11,12 @@ body {
 	margin-left:60px;
 }
 
+#container{
+	margin-top:50px;
+	margin-left:60px;
+}
+
+
 #list {
 	width: 103.125%; /* 990px */
 	overflow: hidden;
@@ -33,6 +39,7 @@ a{
 
 .masonImg{
 	border-radius: 7px;
+	width:100%;
 }
 
 .link-panel:hover {

@@ -1,16 +1,9 @@
-var container = document.querySelector('#container');
+var $container = $('#container');
+$container.masonry($container, {
+	  // options
+	  columnWidth: 300,
+	  itemSelector: '.item'
+	});
 
-var msnry = new Masonry(container, {
-	// options
-	columnWidth : 200,
-	itemSelector : '.item',
-	containerStyle: null
-});
-//msnry.layout();
-
-/* layout Masonry again after all images have loaded
-imagesLoaded(container, function() {
-	msnry.layout();
-	alert("dick");
-});
-*/
+$container.masonry( 'option', { gutter: 5} );
+$container.masonry();
