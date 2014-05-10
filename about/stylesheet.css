@@ -6,16 +6,15 @@ body {
 	text-align: center;
 }
 
-.js-masonry{
-	margin-top:50px;
-	margin-left:60px;
+.js-masonry {
+	margin-top: 50px;
+	margin-left: 60px;
 }
 
-#container{
-	margin-top:50px;
-	margin-left:60px;
+#container {
+	margin-top: 50px;
+	margin-left: 60px;
 }
-
 
 #list {
 	width: 103.125%; /* 990px */
@@ -26,20 +25,20 @@ body {
 .item {
 	width: 300px; /* 300px */
 	float: left;
-	background-color:#111111;
-	border-radius:7px;
-	border-color:#EEEEEE !important;
+	background-color: #111111;
+	border-radius: 7px;
+	border-color: #EEEEEE !important;
 	border: 1px solid;
-	margin-bottom:5px;
-	padding:6px;
+	margin-bottom: 5px;
+	padding: 6px;
 }
-a{
-	border-color:#EEEEEE;
+a {
+	border-color: #EEEEEE;
 }
 
-.masonImg{
+.masonImg {
 	border-radius: 7px;
-	width:100%;
+	width: 100%;
 }
 
 .link-panel:hover {
@@ -47,12 +46,12 @@ a{
 }
 
 p, h1, h2, h3, h4, h5 {
+	font-family: 'Exo 2', sans-serif;
 	color: #FDFDFD !important;
-	margin:0px;
+	margin: 0px;
 }
-p{
-	font-size:20px;
-	line-height:25px;
+p {
+	font-size: 20px;
+	line-height: 25px;
 }
-
 

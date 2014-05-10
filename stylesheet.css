@@ -1,11 +1,9 @@
 body {
 	background-color: #000000 !important;
-	font-family: verdana;
+	font-family: 'Exo 2', sans-serif;
 	color: #FDFDFF;
-	font-size:20px;
+	font-size: 20px;
 }
-
-
 
 .button {
 	font-family: verdana;
@@ -21,11 +19,12 @@ body {
 	background-color: #002932;
 }
 
-.rounded{
-	border-radius:12px;
+.rounded {
+	border-radius: 12px;
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, a {
+	font-family: 'Exo 2', sans-serif;
 	color: #CCCCCC !important;
 }
 
