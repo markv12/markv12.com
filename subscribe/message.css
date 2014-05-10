@@ -1,4 +1,4 @@
-@font-face { font-family: grumps; src: url('BD_Cartoon_Shout.ttf');} 
+@font-face { font-family: grumps; src: url('../fonts/BD_Cartoon_Shout.ttf');} 
 
 html {
 	height: 100%;
