@@ -4,6 +4,7 @@ $container.masonry($container, {
 	  columnWidth: 300,
 	  itemSelector: '.item'
 	});
-
-$container.masonry( 'option', { gutter: 5} );
-$container.masonry();
+imagesLoaded( container, function() {
+	$container.masonry( 'option', { gutter: 5} );
+	$container.masonry();
+});
