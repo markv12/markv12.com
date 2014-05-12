@@ -51,8 +51,8 @@ switch(getenv("REDIRECT_STATUS")) {
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 
 	<title>Page not found: <?php print($server_url); ?></title>
-	<link rel="stylesheet" href="libraries/foundation/css/foundation.min.css">
-	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="http://markv12.com/libraries/foundation/css/foundation.min.css">
+	<link rel="stylesheet" href="http://markv12.com/stylesheet.css">
 
 </head>
 <body>
