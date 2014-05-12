@@ -56,7 +56,7 @@ switch(getenv("REDIRECT_STATUS")) {
 
 </head>
 <body>
-
+<br />
 <div class="row" style="color: #CCCCCC">
 	<div class="large-8 medium-8 columns large-centered medium-centered">
 		<div class="panel">
@@ -65,8 +65,6 @@ switch(getenv("REDIRECT_STATUS")) {
 			<p>The <a href="http://en.wikipedia.org/wiki/Uniform_resource_locator">URL</a> you requested was not found. <?PHP echo($explanation); ?></p>
 
 			<p>You may also want to try starting from the home page: <a href="<?php print($server_url); ?>"><?php print($server_url); ?></a></p>
-
-			<hr />
 		</div>
 	</div>
 </div>
