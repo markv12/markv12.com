@@ -11,6 +11,8 @@
 		<title>Images</title>
 	</head>
 	<body>
+		<br />
+		<br />
 		<div class="wrapper">
 			<div class="row full-width">
 				<div id="ad"  class="large-2 medium-2 columns hide-for-small-only">
@@ -33,7 +35,9 @@
 				$selectedImage=$images[$imageNumber];
 				?>
 				<div id="content" class="large-10 medium-10 columns">
-					<a id="imagelink" href="<?php echo $selectedImage ?>"> <img id="image" alt="loadin'" src="<?php echo $selectedImage ?>"></img> </a>
+					<a id="imagelink" href="<?php echo $selectedImage ?>"> 
+						<img id="image" alt="loadin'" src="<?php echo $selectedImage ?>" style="border-radius: 5px"></img> 
+					</a>
 
 				</div>
 			</div>
