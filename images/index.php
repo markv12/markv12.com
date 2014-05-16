@@ -15,18 +15,17 @@
 		<br />
 		<div class="wrapper">
 			<div class="row full-width">
-				<div id="ad"  class="large-2 medium-2 columns hide-for-small-only">
-					<script type="text/javascript">
-						<!--
-						google_ad_client ="ca-pub-3228609102652970";
-						/* Electric Teat Ad */
-						google_ad_slot = "1070414973";
-						google_ad_width = 120;
-						google_ad_height = 600;
-						//-->
+				<div id="ad" class="large-2 medium-2 columns hide-for-small-only">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- SideBarAd -->
+					<ins class="adsbygoogle"
+					style="display:inline-block;width:160px;height:600px"
+					data-ad-client="ca-pub-9098590399655966"
+					data-ad-slot="9550918066"> </ins>
+					<script>
+						( adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
-					<script type="text/javascript"
-					src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
 				</div>
 
 				<?php
