@@ -1,0 +1,33 @@
+body {
+	background-color: #FFFFFF !important;
+	font-family: 'Exo 2', sans-serif;
+	color: #111111;
+	font-size: 20px;
+}
+
+.button {
+	font-family: verdana;
+}
+.panel {
+	background-color: #222222;
+	color: #CCCCCC !important;
+	border-color: #555555;
+	border-radius: 12px;
+}
+
+.link-panel:hover {
+	background-color: #002932;
+}
+
+.rounded {
+	border-radius: 12px;
+}
+
+p, h1, h2, h3, h4, h5, a {
+	font-family: 'Exo 2', sans-serif;
+	color: #111111 !important;
+}
+
+#wrapper {
+	margin:50px;
+}
