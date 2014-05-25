@@ -20,6 +20,10 @@ body {
 	border-radius: 12px;
 }
 
+.sidenav{
+	position:fixed;
+}
+
 p, h1, h2, h3, h4, h5, a {
 	font-family: 'Exo 2', sans-serif;
 	color: #111111 !important;
