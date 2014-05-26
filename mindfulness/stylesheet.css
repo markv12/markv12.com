@@ -2,7 +2,7 @@ body {
 	background-color: #FFFFFF !important;
 	font-family: 'Exo 2', sans-serif;
 	color: #111111;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .link-panel:hover {
@@ -23,9 +23,10 @@ p, h1, h2, h3, h4, h5, a {
 }
 
 .current{
-	color:#00EEEE;
+	color:#00AAEE;
+	margin-left:0.75em;
 }
 
 #wrapper {
-	margin:60px;
+	margin:65px;
 }

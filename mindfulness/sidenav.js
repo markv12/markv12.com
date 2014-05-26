@@ -11,7 +11,13 @@ function toggleNav(navID) {
 	$(navID).toggleClass('current');
 
 }
+$('#top').waypoint(function() {
+	toggleNav("#thetop");
+}, {
+	offset : 50
+});
 $('#chapter_1').waypoint(function() {
+	toggleNav("#thetop");
 	toggleNav("#nav1");
 }, {
 	offset : 50
