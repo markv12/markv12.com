@@ -7,11 +7,28 @@
 	});
 }
  */
+
+var CHAPTERKEY = "currentChapter";
+
+if (Cookie.test()) {
+	var currentChapter = Cookie.get(CHAPTERKEY);
+	if (currentChapter) {
+		alert('Cookie was already set');
+		loadPageSection(currentChapter);
+	} else {
+		alert('Cookie was not set, now setting test cookie.');
+		Cookie.set(CHAPTERKEY, 0);
+	}
+}
+else{
+	alert("no cookies here");
+}
+
 function toggleNav(navID) {
 	$(navID).toggleClass('current');
 
 }
-$('#top').waypoint(function() {
+$('#chapter_0').waypoint(function() {
 	toggleNav("#thetop");
 }, {
 	offset : 50
@@ -112,3 +129,9 @@ $('#chapter_16').waypoint(function() {
 }, {
 	offset : 50
 });
+
+function loadPageSection(sectionNum) {
+	var pageSection = "#chapter_" + sectionNum;
+	this.document.location.href = pageSection;
+
+}
