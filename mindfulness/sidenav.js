@@ -18,7 +18,6 @@ if (Cookie.test()) {
 		setCurrentChapter(0);
 	}
 }
-showLoadChapterDialog(0);
 
 function toggleNav(navID) {
 	$(navID).toggleClass('current');
