@@ -13,14 +13,12 @@ var CHAPTERKEY = "currentChapter";
 if (Cookie.test()) {
 	var currentChapter = Cookie.get(CHAPTERKEY);
 	if (currentChapter) {
-		loadPageSection(currentChapter);
+		showLoadChapterDialog(currentChapter);
 	} else {
 		setCurrentChapter(0);
 	}
 }
-else{
-	alert("no cookies here");
-}
+showLoadChapterDialog(0);
 
 function toggleNav(navID) {
 	$(navID).toggleClass('current');
@@ -145,7 +143,28 @@ $('#chapter_16').waypoint(function() {
 	offset : 100
 });
 
-function loadPageSection(sectionNum) {
+function showLoadChapterDialog(chapterNum){
+	$("#dialog-text").text("Go to where you left off at chapter " + chapterNum + "?");
+
+	$(function() {
+	    $( "#dialog-confirm" ).dialog({
+	      resizable: false,
+	      modal: true,
+	      buttons: {
+	        "Yes": function() {
+	    	  loadChapterSelection(chapterNum);
+	          $( this ).dialog( "close" );
+	        },
+	        "No": function() {
+	          unsetCurrentChapter();
+	          $( this ).dialog( "close" );
+	        }
+	      }
+	    });
+	  });
+}
+
+function loadChapterSelection(sectionNum) {
 	var pageSection = "#chapter_" + sectionNum;
 	this.document.location.href = pageSection;
 
@@ -153,5 +172,10 @@ function loadPageSection(sectionNum) {
 function setCurrentChapter(chapter){
 	if (Cookie.test()) {
 		Cookie.set(CHAPTERKEY, chapter);
+	}
+}
+function unsetCurrentChapter(){
+	if (Cookie.test()) {
+		Cookie.unset(CHAPTERKEY);
 	}
 }
