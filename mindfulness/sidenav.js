@@ -40,8 +40,8 @@ function toggleNavChapter(chapterNum) {
 
 }
 
-function showLoadChapterDialog(chapterNum){
-	$("#dialog-text").text("Go to where you left off at chapter " + chapterNum + "?");
+function showLoadChapterDialog(chapNum){
+	$("#dialog-text").text("Go to where you left off at chapter " + chapNum + "?");
 
 	$(function() {
 	    $( "#dialog-confirm" ).dialog({
@@ -61,9 +61,9 @@ function showLoadChapterDialog(chapterNum){
 	  });
 }
 
-function setCurrentChapter(chapter){
+function setCurrentChapter(chapNum){
 	if (Cookie.test()) {
-		Cookie.set(CHAPTERKEY, chapter);
+		Cookie.set(CHAPTERKEY, chapNum);
 	}
 }
 function unsetCurrentChapter(){
