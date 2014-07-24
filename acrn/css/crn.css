@@ -51,7 +51,7 @@
 }
 
 .editFreq {
-    color: #7799FF;
+    color: #5577FF;
     cursor: pointer; 
     cursor: hand;
 }
@@ -59,14 +59,14 @@
 .acrnFreq {
     cursor: pointer; 
     cursor: hand;
-    color: #7799FF;
+    color: #5577FF;
 }
 
 
 .acrnFreqPlaying {
     cursor: pointer; 
     cursor: hand;
-    color: #FF3333;
+    color: #FF1111;
 }
 
 .acrnFreq:hover {
@@ -94,10 +94,6 @@
 body {
     padding-top: 60px;
     background-color: #222222;
-    color:#EEEEEE;
-}
-h1{
-    color:#EEEEEE;
 }
 
 * {
@@ -105,13 +101,9 @@ h1{
     font-size: 16px;
 }
 
-a:link
-{ 
-    color:#7799FF;    
-}
-a:visited
-{ 
-    color:#AA55FF;    
+.panel{
+    border-radius:30px;
+    padding:30px;
 }
 
 .projLinks {
