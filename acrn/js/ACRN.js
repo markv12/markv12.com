@@ -81,19 +81,22 @@ $(document).ready(function() {
 
     timer = new (function() {
         var $stopwatch, // Stopwatch element on the page
-                incrementTime = 70, // Timer speed in milliseconds
-                currentTime = 0, // Current time in hundredths of a second
+                incrementTime = 100, // Timer speed in milliseconds
+                startTime = 0, // Current time in hundredths of a second
                 updateTimer = function() {
-            $stopwatch.html(formatTime(currentTime));
-            currentTime += incrementTime / 10;
+            if(startTime == 0){
+                startTime = Date.now();
+            }
+            $stopwatch.html(msToTime(Date.now()-startTime));
         },
                 init = function() {
             $stopwatch = $('#stopwatch');
+            $stopwatch.html(msToTime(0));
             timer.Timer = $.timer(updateTimer, incrementTime, true);
             timer.Timer.pause();
         };
         this.resetStopwatch = function() {
-            currentTime = 0;
+            startTime = 0;
             this.Timer.stop().once();
         };
         $(init);
@@ -426,11 +429,15 @@ function pad(number, length) {
     return str;
 }
 
-function formatTime(time) {
-    var min = parseInt(time / 6000),
-            sec = parseInt(time / 100) - (min * 60),
-            hundredths = pad(time - (sec * 100) - (min * 6000), 2);
-    return (min > 0 ? pad(min, 2) : "00") + ":" + pad(sec, 2) + ":" + hundredths;
+function msToTime(s) {
+  var ms = s % 1000;
+  s = (s - ms) / 1000;
+  var secs = s % 60;
+  s = (s - secs) / 60;
+  var mins = s % 60;
+  var hrs = (s - mins) / 60;
+
+  return pad(hrs, 2) + ':' + pad(mins, 2) + ':' + pad(secs, 2);
 }
 
 function isPositiveInteger(n) {

@@ -41,8 +41,9 @@
 
 .freqSelected {
     background-color: #f8f8f8;
-    color: rgb(83, 83, 83);
-    font-weight: bold;
+    cursor: pointer; 
+    color: #5577FF;
+    font-size: 22px;
 }
 
 .freqAdjustSize {
@@ -53,19 +54,17 @@
 .editFreq {
     color: #5577FF;
     cursor: pointer; 
-    cursor: hand;
 }
 
 .acrnFreq {
     cursor: pointer; 
-    cursor: hand;
     color: #5577FF;
+    font-size: 22px;
 }
 
 
 .acrnFreqPlaying {
     cursor: pointer; 
-    cursor: hand;
     color: #FF1111;
 }
 
