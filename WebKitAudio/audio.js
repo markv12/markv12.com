@@ -17,6 +17,7 @@ var scale = {
     c: 261.63
 };
 var song = "fdcdfff-ddd-fgg-fdcdffffddfdc---";
+var oscillatorType = "sine";
 
 setInterval(play, 1000 / 4);
 
@@ -25,6 +26,7 @@ function createOscillator(freq) {
         decay = 250,
         gain = audio.createGain(),
         osc = audio.createOscillator();
+    osc.type=oscillatorType;
 
     gain.connect(audio.destination);
     gain.gain.setValueAtTime(0, audio.currentTime);
@@ -32,7 +34,6 @@ function createOscillator(freq) {
     gain.gain.linearRampToValueAtTime(0, audio.currentTime + decay / 1000);
 
     osc.frequency.value = freq;
-    osc.type = "square";
     osc.connect(gain);
     osc.start(0);
 
@@ -57,11 +58,11 @@ function play() {
 
 
 function toSawtooth(){
-	osc.type="sawtooth";
+	oscillatorType="sawtooth";
 }
 function toSine(){
-	osc.type="sine";
+	oscillatorType="sine";
 }
 function toSquare(){
-	osc.type="square";
+	oscillatorType="square";
 }
