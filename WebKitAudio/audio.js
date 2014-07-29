@@ -1,3 +1,8 @@
+jQuery('#coreFrequency').on('input propertychange paste', function() {
+    alert("changed");
+});
+
+
 var audio;
 
 try {
