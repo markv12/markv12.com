@@ -1,5 +1,36 @@
-jQuery('#coreFrequency').on('input propertychange paste', function() {
-    alert("changed");
+var coreFrequency = 8000;
+var freqs = calculateFrequencies(coreFrequency);
+
+function setupFrequencies(frequencyValue){
+    if(!isNaN(frequencyValue) && frequencyValue >19){
+        coreFrequency= Math.floor(frequencyValue);
+        freqs = calculateFrequencies(coreFrequency);
+        renderFrequencies(freqs);
+    }
+}
+
+// Calculation from http://www.tinnitustalk.com/threads/acoustic-cr%C2%AE-neuromodulation-do-it-yourself-guide.1469/page-6
+function calculateFrequencies(coreFrequency){
+    return [
+        Math.floor(coreFrequency * 0.773 - 44.5), 
+        Math.floor(coreFrequency * 0.903 - 21.5),
+        Math.floor(coreFrequency * 1.09 + 52), 
+        Math.floor(coreFrequency * 1.395 + 26.5)
+    ];
+}
+
+function renderFrequencies(frequencies) {
+    for (var i = 0; i < frequencies.length; i++) {
+        var searchString = "#freq"+(i+1);
+        $(searchString).html(frequencies[i]);
+        console.log(searchString);
+    }   
+}
+
+$(document).ready(function(){
+	var coreFrequencyBox = $('#coreFrequency'); 
+	coreFrequencyBox.val(coreFrequency);
+	coreFrequencyBox.keyup(function () { setupFrequencies(coreFrequencyBox.val())});
 });
 
 
@@ -13,18 +44,9 @@ catch (error) {
 }
 
 var position = 0;
-var scale = {
-    g: 392,
-    f: 349.23,
-    e: 329.63,
-    b: 493.88,
-    d: 293.66,
-    c: 261.63
-};
-var song = "fdcdfff-ddd-fgg-fdcdffffddfdc---";
-var oscillatorType = "sine";
 
-setInterval(play, 1000 / 4);
+var song = "020310203010--------";
+var oscillatorType = "sine";
 
 function createOscillator(freq) {
     var attack = 10,
@@ -49,9 +71,9 @@ function createOscillator(freq) {
     }, decay)
 }
 
-function play() {
-    var note = song.charAt(position),
-        freq = scale[note];
+function playNextNote() {
+    var note = parseInt(song.charAt(position)),
+        freq = freqs[note];
     position += 1;
     if(position >= song.length) {
         position = 0;
@@ -71,3 +93,10 @@ function toSine(){
 function toSquare(){
 	oscillatorType="square";
 }
+
+var timer = $.timer(function() {
+                playNextNote();
+        });
+timer.set({ time : 166, autostart : true });
+
+

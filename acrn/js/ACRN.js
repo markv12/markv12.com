@@ -81,15 +81,15 @@ $(document).ready(function() {
 
     timer = new (function() {
         var $stopwatch, // Stopwatch element on the page
-                incrementTime = 100, // Timer speed in milliseconds
-                startTime = 0, // Current time in hundredths of a second
-                updateTimer = function() {
+        incrementTime = 100, // Timer speed in milliseconds
+        startTime = 0, // Current time in hundredths of a second
+        updateTimer = function() {
             if(startTime == 0){
                 startTime = Date.now();
             }
             $stopwatch.html(msToTime(Date.now()-startTime));
         },
-                init = function() {
+        init = function() {
             $stopwatch = $('#stopwatch');
             $stopwatch.html(msToTime(0));
             timer.Timer = $.timer(updateTimer, incrementTime, true);
