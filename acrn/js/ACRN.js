@@ -377,18 +377,11 @@ function generateACRNFrequencies() {
 }
 
 function renderACRNFrequencies() {
-    var patternStr = "";
-    for (var i = 0; i < freqChoices.length; i++) {
-        editFreqNode = $("<span>");
-        editFreqNode.addClass("acrnFreq");
-        editFreqNode.attr("id", ACRN_FREQ_PREFIX + i);
-        editFreqNode.html(freqChoices[i]);
-        patternStr += editFreqNode[0].outerHTML + " hz";
-        if (i < freqChoices.length - 1) {
-            patternStr += ", ";
-        }
-    }
-    $("#freqPattern").html(patternStr);
+    $("#freq0").html(freqChoices[0]);
+    $("#freq1").html(freqChoices[1]);
+    $("#freq2").html(freqChoices[2]);
+    $("#freq3").html(freqChoices[3]);
+
     registerEditFrequencies();
 }
 

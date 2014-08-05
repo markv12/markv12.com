@@ -104,7 +104,31 @@
 
             			<button type="button" class="btn btn-default" id="hideButton" onclick="hideFreqAdjust();">Hide Frequency Adjust</button>
             		</div>
-            		Frequencies in current pattern: <span id="freqPattern"></span>
+            		Frequencies in current pattern:
+                    <table id="freqPattern">
+                        <tr>
+                            <th>Frequency:</th>
+                            <th>Volume:</th>
+                        </tr>   
+
+                        <tr>
+                            <td><span class="acrnFreq" id="freq0"></span> hz </td>
+                            <td></td>
+                        </tr>  
+                        <tr>
+                            <td><span class="acrnFreq" id="freq1"></span> hz </td>
+                            <td></td>
+                        </tr> 
+                        <tr>
+                            <td><span class="acrnFreq" id="freq2"></span> hz </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="acrnFreq" id="freq3"></span> hz </td>
+                            <td></td>
+                        </tr>
+
+                    </table>
 
             		<br/><br/>
             		Elapsed time: <span id="stopwatch"></span>
