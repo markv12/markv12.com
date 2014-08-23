@@ -69,16 +69,18 @@
         <div class="row">
             <div class="columns" >
                 <div class="panel" >
-                    <h1>ACRN Tinnitus Protocol</h1>
-                	<p>This is an attempt at implementing the <a href="http://www.tinnitus.org.uk/acoustic-cr-neuromodulation">Acoustic Coordinated Reset Neuromodulation</a> tinnitus treatment protocol 
-                		using <a href="http://www.thetinnitusclinic.co.uk/downloads/Tass%20et%20al_RNN%202012_Counteracting%20Tinnitus%20by%20Acoustic%20CR%20Neuromodulation.pdf">this paper</a> as a guide. 
-                		At the moment, this page does not work in the latest versions of Firefox and Chrome. It does work in Safari.</p>
-            		<p>First try to match your tinnitus frequency using the "Play Single Frequency" button and then 
-            			start the protocol with the "Play ACRN" button. 
-            			Individual frequency values and volume can be adjusted by clicking on them.
-            		</p>
-            		<p>ACRN implementation copied with some modifications from <a href="http://www.generalfuzz.net/acrn/">General Fuzz</a> Please check the link for more information.</p>
-            		<br/>
+                    <div class="row">
+                        <h1>ACRN Tinnitus Protocol</h1>
+                    	<p>This is an attempt at implementing the <a href="http://www.tinnitus.org.uk/acoustic-cr-neuromodulation">Acoustic Coordinated Reset Neuromodulation</a> tinnitus treatment protocol 
+                    		using <a href="http://www.thetinnitusclinic.co.uk/downloads/Tass%20et%20al_RNN%202012_Counteracting%20Tinnitus%20by%20Acoustic%20CR%20Neuromodulation.pdf">this paper</a> as a guide. 
+                    		At the moment, this page does not work in the latest versions of Firefox and Chrome. It does work in Safari.</p>
+                		<p>First try to match your tinnitus frequency using the "Play Single Frequency" button and then 
+                			start the protocol with the "Play ACRN" button. 
+                			Individual frequency values and volume can be adjusted by clicking on them.
+                		</p>
+                		<p>ACRN implementation copied with some modifications from <a href="http://www.generalfuzz.net/acrn/">General Fuzz</a> Please check the link for more information.</p>
+                		<br/>
+                    </div>
             		<section id="play">
             			<button type="button" class="btn btn-default" id="playToneButton" onclick="playTone();">Play Single Frequency</button>
             			<button type="button" class="btn btn-default" id="playACRNButton" onclick="playACRN();">Play ACRN</button>
@@ -93,7 +95,7 @@
             		</div>
             		<br/>
             		<div class="volSlider" id="volSliderContainer">
-            			Volume: 
+            			Master Volume: 
             			<span id="volSlider" class="volSliderSize"></span>
             		</div>
             		<div id="freqAdjustContainer">
