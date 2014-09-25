@@ -3,7 +3,6 @@ body {
 }
 
 body * {
-	//color: #222222 !important;
 	font-family: 'Exo 2', Helvetica, Arial, sans-serif !important;
 }
 
@@ -24,7 +23,7 @@ h1 {
 }
 
 .panel{
-	border-radius:5px;
+	border-radius:8px;
 }
 .breadcrumbs{
 	border-radius:5px;
