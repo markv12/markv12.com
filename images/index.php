@@ -34,8 +34,8 @@
 				$selectedImage=$images[$imageNumber];
 				?>
 				<div id="content" class="large-10 medium-10 columns">
-					<a id="imagelink" href="<?php echo $selectedImage ?>"> 
-						<img id="image" alt="loadin'" src="<?php echo $selectedImage ?>" style="border-radius: 5px"></img> 
+					<a id="imagelink" href="<?php echo $selectedImage ?>">
+						<img id="image" alt="loadin'" src="<?php echo $selectedImage ?>" style="border-radius: 5px"></img>
 					</a>
 
 				</div>
