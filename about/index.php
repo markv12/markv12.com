@@ -22,13 +22,13 @@
 					He spends his time doing many different things.
 				</p>
 			</div>
-
 			<?php
 			$data = array
 			  (
 				  "links" => array(
 				  		"http://markv12.com/games/index.html",
 				  		"http://markv12.com/acrn/",
+				  		"http://markv12.com/myhouse/",
 				  		"http://moodtrackingapp.herokuapp.com/",
 				  		"http://shashinkadakara.blogspot.jp/",
 				  		"https://github.com/markv12",
@@ -39,6 +39,7 @@
 				  "titles" => array(
 				  		"Making Games",
 				  		"Learning about Tinnitus",
+				  		"Building Worlds",
 				  		"Tracking Moods",
 				  		"Taking Pictures",
 				  		"Trying to Think of Good Commit Messages",
@@ -49,6 +50,7 @@
 				  "images" => array(
 				  		"../games/spaceThingScreen.jpg",
 				  		"../media/acrn.png",
+				  		"../media/myhouse.png",
 				  		"../media/mood.png",
 				  		"../media/fromSha.jpg",
 				  		"../media/Octocat.png",
