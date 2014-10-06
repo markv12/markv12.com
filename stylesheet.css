@@ -9,9 +9,9 @@ body {
 	font-family: verdana;
 }
 .panel {
-	background-color: #222222;
+	background-color: #333333;
 	color: #CCCCCC !important;
-	border-color: #555555;
+	border-color: #000000;
 	border-radius: 12px;
 }
 
