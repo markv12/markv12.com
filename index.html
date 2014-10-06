@@ -15,13 +15,13 @@
 		<link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="stylesheet.css">
 	</head>
-	<body bgcolor="black" style="text-align:center; font-size: 25px;">
+	<body bgcolor="black" style="text-align:center; font-size:25px;">
 
 		<div class="contain-to-grid">
 			<nav class="top-bar" data-topbar>
 				<ul class="title-area">
-					<li class="name">
-						<h1>MarkV12</h1>
+					<li class="name" id="site-name">
+						<p style="font-size:25px;">MarkV12</p>
 					</li>
 				</ul>
 			</nav>
@@ -81,6 +81,10 @@
 		<script src="libraries/foundation/js/vendor/jquery.js"></script>
 		<script src="libraries/foundation/js/foundation.min.js"></script>
 		<script>
+
+			$("#site-name").click(function() {
+			  $(".fa").toggleClass("fa-spin");
+			});
 			$(document).foundation();
 		</script>
 	</body>
