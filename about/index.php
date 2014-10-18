@@ -64,10 +64,9 @@
 
 			  	echo "<a href='" . $data["links"][$i] . "'>";
 			  	echo "<div class='item link-panel'>";
-			  	echo "<p>";
+			  	echo "<p style='margin-bottom:6px;'>";
 			  	echo $data["titles"][$i];
 			  	echo "</p>";
-			  	echo "<br />";
 			  	echo "<img src='" . $data["images"][$i] . "' class='masonImg'/>";
 			  	echo "</div>";
 			  	echo "</a>";
