@@ -64,6 +64,9 @@
 							<li>
 								developed workflow for rapidly prototyping <a href="http://markv12.com/grumproom/index.html">explorable</a> <a href="http://markv12.com/myhouse/index.html">3D models</a>
 							</li>
+							<li>
+								<span id="spinTrigger">learning that CSS3 is quite powerful</span>
+							</li>
 						</ul>
 					</div>
 					<hr />
@@ -283,6 +286,17 @@
 		<script src="../libraries/foundation/js/foundation/foundation.tooltip.js"></script>
 
 		<script>
+			$("#spinTrigger").click(function() {
+				if($(this).hasClass("spinOnce")){
+					$("*").removeClass("spinOnce")
+					setTimeout(function(){
+					   $("*").addClass("spinOnce")
+					}, 10);
+				}
+				else{
+					$("*").addClass("spinOnce")
+				}
+			});
 			$(document).foundation();
 		</script>
 	</body>
