@@ -30,12 +30,13 @@
 
 				<?php
 				$imageNumber=$_GET['image'];
-				$images=array("http://i.imgur.com/eS6lo29.jpg","http://i.imgur.com/YIuj3gr.jpg");
+				$images=array("http://i.imgur.com/eS6lo29.jpg","http://i.imgur.com/YIuj3gr.jpg", "http://i.imgur.com/VCecjKQ.jpg",
+					"http://i.imgur.com/78KpDaM.jpg", "http://i.imgur.com/fZApytw.jpg");
 				$selectedImage=$images[$imageNumber];
 				?>
 				<div id="content" class="large-10 medium-10 columns">
 					<a id="imagelink" href="<?php echo $selectedImage ?>">
-						<img id="image" alt="loadin'" src="<?php echo $selectedImage ?>" style="border-radius: 5px"></img>
+						<img id="image" alt="loadin'" src="<?php echo $selectedImage ?>" style="border-radius: 6px; max-height:1000px"></img>
 					</a>
 
 				</div>
