@@ -1,21 +1,30 @@
 body {
 	background-color: #000000 !important;
-	font-family: 'Exo 2', sans-serif;
-	color: #FDFDFF;
-	font-size: 20px;
 }
 
-.button {
-	font-family: verdana;
+body *:not(i) {
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif !important;
 }
-.panel {
+
+#darktheme .panel {
 	background-color: #333333;
 	color: #CCCCCC !important;
 	border-color: #000000;
-	border-radius: 12px;
+	border-radius: 10px;
 }
 
-.link-panel:hover {
+#darktheme h2 {
+  color: #CCCCCC !important;
+}
+#darktheme h1 {
+  color: #CCCCCC !important;
+}
+
+#site-name {
+	color: #CCCCCC !important;
+}
+
+#darktheme .link-panel:hover {
 	background-color: #002932;
 }
 
@@ -23,7 +32,107 @@ body {
 	border-radius: 12px;
 }
 
-p, h1, h2, h3, h4, h5, a {
-	font-family: 'Exo 2', sans-serif;
-	color: #CCCCCC !important;
+/*
+From Resume
+*/
+
+#resume .panel{
+	background:#f2f2f2;
+	border-radius: 10px;
 }
+
+
+h1 {
+	text-decoration: underline
+}
+
+.indented {
+	margin-left: 20px;
+}
+
+.smallMargin {
+	margin-bottom: 4px;
+}
+
+.setHeight {
+	height: 95px;
+}
+
+.breadcrumbs{
+	border-radius:5px;
+}
+.spinOnce{
+    -webkit-animation:spin 10s ease;
+    -moz-animation:spin 10s ease;
+    animation:spin 10s ease;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media print {
+  .large-1 {
+    width: 8.33333%;
+  }
+
+  .large-2 {
+    width: 16.66667%;
+  }
+
+  .large-3 {
+    width: 25%;
+  }
+
+  .large-4 {
+    width: 33.33333%;
+  }
+
+  .large-5 {
+    width: 41.66667%;
+  }
+
+  .large-6 {
+    width: 50%;
+  }
+
+  .large-7 {
+    width: 58.33333%;
+  }
+
+  .large-8 {
+    width: 66.66667%;
+  }
+
+  .large-9 {
+    width: 75%;
+  }
+
+  .large-10 {
+    width: 83.33333%;
+  }
+
+  .large-11 {
+    width: 91.66667%;
+  }
+
+  .large-12 {
+    width: 100%;
+  }
+  .setHeight {
+    height: 72px;
+  }
+  * {
+    font-size:11px !important;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  a {
+      color: black !important;
+      text-decoration: none !important;
+  }
+  .dontprint{
+    display: none;
+  }
+}
+
