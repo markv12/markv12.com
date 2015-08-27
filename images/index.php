@@ -30,8 +30,12 @@
 
 				<?php
 				$imageNumber=$_GET['image'];
-				$images=array("http://i.imgur.com/eS6lo29.jpg","http://i.imgur.com/YIuj3gr.jpg", "http://i.imgur.com/VCecjKQ.jpg",
-					"http://i.imgur.com/78KpDaM.jpg", "http://i.imgur.com/fZApytw.jpg");
+				$images=array("http://i.imgur.com/eS6lo29.jpg",
+											"http://i.imgur.com/YIuj3gr.jpg",
+											"http://i.imgur.com/VCecjKQ.jpg",
+											"http://i.imgur.com/78KpDaM.jpg",
+											"http://i.imgur.com/fZApytw.jpg",
+											"http://i.imgur.com/eLWao8n.jpg");
 				$selectedImage=$images[$imageNumber];
 				?>
 				<div id="content" class="large-10 medium-10 columns">
