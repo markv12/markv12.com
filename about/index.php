@@ -26,14 +26,14 @@
 			$data = array
 			  (
 				  "links" => array(
-				  		"http://markv12.com/games/index.html",
-				  		"http://markv12.com/acrn/",
-				  		"http://markv12.com/myhouse/",
+				  		"http://scottsteffes.com/games/index.html",
+				  		"http://scottsteffes.com/acrn/",
+				  		"http://scottsteffes.com/myhouse/",
 				  		"http://moodtrackingapp.herokuapp.com/",
 				  		"http://shashinkadakara.blogspot.jp/",
 				  		"https://github.com/markv12",
 				  		"http://ankisrs.net/",
-				  		"http://markv12.com/mindfulness/index.html",
+				  		"http://scottsteffes.com/mindfulness/index.html",
 				  		"https://www.youtube.com/watch?v=iZ9XZZokiuUl"
 				  ),
 				  "titles" => array(
