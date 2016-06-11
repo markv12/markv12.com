@@ -1,5 +1,5 @@
 body {
-	background-color: #000000 !important;
+	background-color: #222222 !important;
 }
 
 body *:not(i) {
@@ -7,25 +7,25 @@ body *:not(i) {
 }
 
 #darktheme .panel {
-	background-color: #333333;
-	color: #CCCCCC !important;
+	background-color: #F2F2F2;
+	color: #222222 !important;
 	border-color: #000000;
 	border-radius: 10px;
 }
 
 #darktheme h2 {
-  color: #CCCCCC !important;
+  color: #000000 !important;
 }
 #darktheme h1 {
   color: #CCCCCC !important;
 }
 
 #site-name {
-	color: #CCCCCC !important;
+	color: #F2F2F2 !important;
 }
 
 #darktheme .link-panel:hover {
-	background-color: #002932;
+	background-color: #80A9A2;
 }
 
 .rounded {
