@@ -1,3 +1,12 @@
+<?php require_once( '../couch/cms.php' ); ?>
+<cms:template title='About' />
+
+<cms:repeatable name='about_tiles' >
+	<cms:editable name='card_link' label='Link' desc='Enter page link here' type='text' />
+	<cms:editable name='card_title' label='Title' desc='Enter page title here' type='text' />
+	<cms:editable name='image_link' label='Image Link' desc='Enter image link here' type='text' />
+</cms:repeatable>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -15,64 +24,27 @@
 		<div id="container">
 			<div class="item">
 				<img src="../media/profileSmall.jpg" alt="picture of me Scott Steffes" class="masonImg"/>
-				<p>
-					Scott Steffes is a Software Developer currently living somewhere in Minnesota.
-					<br />
-					<br />
-					He spends his time doing many different things.
-				</p>
+				<cms:editable name='basic_description' type='richtext'>
+					<p>
+						Scott Steffes is a Software Developer currently living somewhere in Minnesota.
+						<br />
+						<br />
+						He spends his time doing many different things.
+					</p>
+				</cms:editable>
 			</div>
-			<?php
-			$data = array
-			  (
-				  "links" => array(
-				  		"http://scottsteffes.com/games/index.html",
-				  		"http://scottsteffes.com/acrn/",
-				  		"http://scottsteffes.com/myhouse/",
-				  		"http://moodtrackingapp.herokuapp.com/",
-				  		"http://shashinkadakara.blogspot.jp/",
-				  		"https://github.com/markv12",
-				  		"http://ankisrs.net/",
-				  		"http://scottsteffes.com/mindfulness/index.html",
-				  		"https://www.youtube.com/watch?v=iZ9XZZokiuUl"
-				  ),
-				  "titles" => array(
-				  		"Making Games",
-				  		"Learning about Tinnitus",
-				  		"Building Worlds",
-				  		"Tracking Moods",
-				  		"Taking Pictures",
-				  		"Trying to Think of Good Commit Messages",
-				  		"Studying Japanese",
-				  		"Finding Peace",
-				  		"Eating Good Food"
-				  ),
-				  "images" => array(
-				  		"../games/spaceThingScreen.jpg",
-				  		"../media/acrn.png",
-				  		"../media/myhouse.png",
-				  		"../media/mood.png",
-				  		"../media/fromSha.jpg",
-				  		"../media/Octocat.png",
-				  		"../media/japanFlag.png",
-				  		"http://www.urbandharma.org/images/bhanteG2.jpg",
-				  		"../media/tekuteku.jpg"
-				  )
-			  );
-			  $length = count($data["links"]);
-			  for ($i=0; $i<$length; $i++) {
-
-			  	echo "<a href='" . $data["links"][$i] . "'>";
-			  	echo "<div class='item link-panel'>";
-			  	echo "<p style='margin-bottom:6px;'>";
-			  	echo $data["titles"][$i];
-			  	echo "</p>";
-			  	echo "<img src='" . $data["images"][$i] . "' class='masonImg'/>";
-			  	echo "</div>";
-			  	echo "</a>";
-			  }
-			?>
+			<cms:show_repeatable 'about_tiles' >
+				<a href='<cms:show card_link />'>
+				  	<div class='item link-panel'>
+				  		<p style='margin-bottom:6px;'>
+				  			<cms:show card_title />
+						</p>
+						<img src='<cms:show image_link />' class='masonImg'/>
+					</div>
+				</a>
+			</cms:show_repeatable>
 		</div>
 		<script src="main.js"></script>
 	</body>
 </html>
+<?php COUCH::invoke(); ?>
